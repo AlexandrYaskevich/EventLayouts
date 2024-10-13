@@ -18,8 +18,6 @@ export default [
       },
     },
     settings: { react: { version: '18.3' } },
-    extends: [
-    'plugin:react/recommended'],
     plugins: {
       react,
       'react-hooks': reactHooks,
@@ -31,14 +29,13 @@ export default [
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
       'react/jsx-no-target-blank': 'off',
-      'react/prop-types': 'off', 
+      "react/prop-types": "off",
       "react/jsx-uses-react": "error",   
       "react/jsx-uses-vars": "error" ,
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
       ],
-      
     },
   },
 ]
