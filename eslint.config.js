@@ -23,9 +23,6 @@ export default [
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
-    extends: [
-    'plugin:react/recommended'
-    ],
     rules: {
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
@@ -33,6 +30,8 @@ export default [
       ...reactHooks.configs.recommended.rules,
       'react/jsx-no-target-blank': 'off',
       'react/prop-types': 'off', 
+      "react/jsx-uses-react": "error",   
+      "react/jsx-uses-vars": "error" ,
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
