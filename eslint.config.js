@@ -18,6 +18,8 @@ export default [
       },
     },
     settings: { react: { version: '18.3' } },
+    extends: [
+    'plugin:react/recommended'],
     plugins: {
       react,
       'react-hooks': reactHooks,
@@ -36,6 +38,7 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      
     },
   },
 ]
