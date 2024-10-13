@@ -4,6 +4,7 @@ import IconSwitch from '../IconSwitch/IconSwitch';
 import CardsView from '../CardsView/CardsView';
 import ListView from '../ListView/ListView';
 
+
 function Store({ products }) {
   const [icon, setIcon] = useState('view_list');
 
